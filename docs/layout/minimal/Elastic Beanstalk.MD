@@ -2,7 +2,7 @@
 title: AWS Elastic BeanStalk
 layout: default
 parent: AWS
-grand_parent: infra
+grand_parent: Infra
 ---
 
 # AWS Elastic BeanStalk

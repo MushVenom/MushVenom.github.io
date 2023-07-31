@@ -1,7 +1,7 @@
 ---
 title: AWS
 layout: minimal
-parent: infra
+parent: Infra
 has_children: true
 ---
 

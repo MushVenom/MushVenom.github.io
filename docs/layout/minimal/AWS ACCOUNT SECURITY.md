@@ -1,8 +1,8 @@
 ---
-title: AWS account 보안
+title: AWS 로그인
 layout: default
 parent: AWS
-grand_parent: infra
+grand_parent: Infra
 ---
 
 # aws serverless
