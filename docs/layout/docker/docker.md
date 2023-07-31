@@ -1,5 +1,5 @@
 ---
-title: Docker
+title: docker
 layout: minimal
 parent: AWS
 has_children: true

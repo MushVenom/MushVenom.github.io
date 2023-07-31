@@ -1,8 +1,8 @@
 ---
-title: AWS 로그인
+title: AWS account 보안
 layout: default
-parent: A minimal layout page
-grand_parent: AWS
+parent: AWS
+grand_parent: infra
 ---
 
 # aws serverless

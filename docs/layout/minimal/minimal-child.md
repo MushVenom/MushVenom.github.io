@@ -2,7 +2,7 @@
 title: Minimal layout child page
 layout: minimal
 parent: A minimal layout page
-grand_parent: AWS
+grand_parent: infra
 ---
 
 This is a child page that uses the same minimal layout as its parent page.
