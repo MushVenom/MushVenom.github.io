@@ -61,7 +61,7 @@ grand_parent: Utils
 
 ## JWT 기본 구조
 
-![image](../image/jwt1.png)
+![image](../../../image/jwt1.png)
 
 <br />
 <br />
