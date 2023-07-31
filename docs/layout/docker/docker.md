@@ -1,5 +1,5 @@
 ---
-title: A minimal layout page
+title: Docker
 layout: minimal
 parent: AWS
 has_children: true

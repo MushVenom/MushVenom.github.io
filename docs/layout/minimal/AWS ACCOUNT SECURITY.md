@@ -1,8 +1,8 @@
 ---
-title: aws
+title: AWS 로그인
 layout: default
 parent: A minimal layout page
-grand_parent: Layout
+grand_parent: AWS
 ---
 
 # aws serverless
