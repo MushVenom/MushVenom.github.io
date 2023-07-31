@@ -10,7 +10,7 @@ grand_parent: Infra
 
 ## 프로젝트 구조
 
-- ![image](../../image/d58.png)
+- ![image](../../../image/d58.png)
 
 ## 폴더 구조
 
@@ -298,7 +298,7 @@ deploy:
 
 ## Dockerrun.aws.json
 
-- ![image](../../image/d68.png)
+- ![image](../../../image/d68.png)
 
 > dockerfile이 많은 멀티 프로그림에서 사용
 
@@ -374,7 +374,7 @@ deploy:
 
 ## VPC -> 보안 -> 보안그룹 -> 보안그룹 생성하기
 
-- ![image](../../image/d70.png)
+- ![image](../../../image/d70.png)
 
 ```
 - 인 바운드는 데이터 베이스에서 데이터를 가져오는 부분
@@ -389,7 +389,7 @@ deploy:
   - `세부 적인 선택 없이 보안그룹 생성 완료`
 - 그 후
   - 리다이렉션 된 페이지에서 인바운드 규칙 편집 클릭
-  - ![image](../../image/d69.png)
+  - ![image](../../../image/d69.png)
 
 <br />
 <br />
@@ -400,11 +400,11 @@ deploy:
 - RDS
 
   - 인스턴스 - 수정 - 즉시 수정
-  - ![image](../../image/d72.png)
+  - ![image](../../../image/d72.png)
 
 - Elastic Beanstic
   - Elastic Beanstalk - 환경 - 구성 - 인스턴스 - 편접
-  - ![image](../../image/d73.png)
+  - ![image](../../../image/d73.png)
 
 <br />
 
@@ -417,12 +417,12 @@ deploy:
 
 ## RDS 와 EB 환경 변수 적용 하기
 
-- ![image](../../image/d74.png)
-- ![image](../../image/d75.png)
+- ![image](../../../image/d74.png)
+- ![image](../../../image/d75.png)
 
 - Elastic Beanstalk 환경 변수
   - 환경 - 구성 - 업데이트,모니터링 로깅 구성
   - 환경 변수 추가
-    - ![image](../../image/d76.png)
+    - ![image](../../../image/d76.png)
 
 > RDS , EB 환경 변수 세팅 완료

@@ -9,7 +9,7 @@ grand_parent: Infra
 
 > 도커를 이용해서 개발단계에서 리액트 실행하기
 
-- ![image](../../image/d25.png)
+- ![image](../../../image/d25.png)
   - 개발 환경 도커 파일 / 운영 파일 도커 파일 두개를 만들어주는 것이 좋다.
 
 <br />
@@ -48,13 +48,13 @@ CMD "npm", "run", "start
 ✅ docker build -f Dockerfile.dev -t jjehyun/reactfirst .
 ```
 
-- ![image](../../image/d26.png)
+- ![image](../../../image/d26.png)
 
 <br />
 
 ## 생성된 도커 이미지로 리액트 앱 실행해보기 (2)
 
-- ![image](../../image/d27.png)
+- ![image](../../../image/d27.png)
   - 3000:3000 으로 포트 매핑 완료
 
 ```
@@ -68,13 +68,13 @@ CMD "npm", "run", "start
 
 ## 볼륨(VOLUME)을 이용한 소스 코드 변경 (3)
 
-- ![image](../../image/d30.png)
+- ![image](../../../image/d30.png)
 
 > COPY 대신 COLUME을 이용해서 소스코드를 변경했을때 다시 이미지를 빌드하지 않아도 변경한 소스 부분이 어플리케이션에 반영
 
-- ![image](../../image/d28.png)
+- ![image](../../../image/d28.png)
   - COPY
-- ![image](../../image/d29.png)
+- ![image](../../../image/d29.png)
   - Volume
 
 ```bash
@@ -90,8 +90,8 @@ CMD "npm", "run", "start
 ## 도커 컴포즈로 더 간단하게 어플 실행 (4)
 
 - 위 단계생략 가능 (docker-compose 사용 시)
-- ![image](../../image/d32.png)
-- ![image](../../image/d33.png)
+- ![image](../../../image/d32.png)
+- ![image](../../../image/d33.png)
 
 > docker-compose.yml
 
@@ -141,7 +141,7 @@ services:
 
 - 코드 변경 시 바로 테스트 코드 실행
 
-- ![image](../../image/d34.png)
+- ![image](../../../image/d34.png)
 
 > react 테스트 명령어
 
@@ -195,7 +195,7 @@ services:
 ✅ docker-compose up --build
 ```
 
-- ![image](../../image/d34.png)
+- ![image](../../../image/d34.png)
   - 두개의 컨테이너 실행
 
 <br />
@@ -240,7 +240,7 @@ docker run -p 8080:80 jjehyun/reactb   [포트 연결]
 
 - CI (지속적인 통합)을 위한 오픈소스 서비스
 - Github repository에 있는 프로젝트를 특정 이벤트에 따라 자동 테스트 / 빌드 배포가 가능하다.
-- ![image](../../image/d41.png)
+- ![image](../../../image/d41.png)
   - Travis CI 연결
 
 ```bash
@@ -288,7 +288,7 @@ after_success:
 ```
 
 - 위코드 추가 후 push 아래처럼 travis ci 자동 실행
-- ![image](../../image/d44.png)
+- ![image](../../../image/d44.png)
 
 <br />
 <br />
@@ -306,17 +306,17 @@ after_success:
     - 플랫폼 브랜치 : Docker running Amazon Linux 2 ...
     - 아키텍쳐 : x86_64 / t2.micro
     - 다른 값들 모두 Default 선택 후 다음
-    - ![image](../../image/d45.png)
+    - ![image](../../../image/d45.png)
   - `서비스 액세스`
     - 직접 IAM에서 권한 5개 rule를 추가해야한다. (안하면 ERROR)
-    - ![image](../../image/d52.png)
+    - ![image](../../../image/d52.png)
     - 권한이 잘 추가 됐다면 이런식으로 뜸
       - IAM에서 권한 이름 : aws-elasticbeanstalk-service-role
       - ✅ AWSElasticBeanstalkWebTier
       - ✅ AWSElasticBeanstalkWorkerTier
       - ✅ AWSElasticBeanstalkMulticontainerDocker
 
-- ![image](../../image/d53.png)
+- ![image](../../../image/d53.png)
   - `AWS Elastic Beanstalk`를 생성하면 S3가 자동으로 생성된다.
 
  <br />
@@ -360,7 +360,7 @@ deploy:
   - 사용 시례
   - ✅AWS 외부에서 실행되는 애플리케이션
 
-- ![image](../../image/d54.png)
+- ![image](../../../image/d54.png)
 
 <br />
 
@@ -372,7 +372,7 @@ deploy:
 
 - `(1)` 배포할 프로젝트에서 setting이동
 
-  - ![image](../../image/d55.png)
+  - ![image](../../../image/d55.png)
 
 - `(2)` Environment Varaiables 에 AWS KEY VALUE 추가
-  - ![image](../../image/d56.png)
+  - ![image](../../../image/d56.png)

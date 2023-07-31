@@ -9,8 +9,8 @@ grand_parent: Infra
 
 ## RDS 생성 (1)
 
-- ![image](../../image/a10.png)
-- ![image](../../image/a11.png)
+- ![image](../../../image/a10.png)
+- ![image](../../../image/a11.png)
 - RDS 생성
 
 ```
@@ -25,9 +25,9 @@ grand_parent: Infra
 
 ## VPC 설정 (2)
 
-- ![image](../../image/a14.png)
-- ![image](../../image/a15.png)
-- ![image](../../image/a16.png)
+- ![image](../../../image/a14.png)
+- ![image](../../../image/a15.png)
+- ![image](../../../image/a16.png)
 
 ```
 vpc는 공항의 검색대 , 인바운드 규칙을 입국절차라고 할 수 있다.
@@ -37,8 +37,8 @@ vpc는 공항의 검색대 , 인바운드 규칙을 입국절차라고 할 수 �
 
 ## RDS 포트 , 엔드포인트 지정 및 워크벤치 접속(3)
 
-- ![image](../../image/a12.png)
-- ![image](../../image/a13.png)
+- ![image](../../../image/a12.png)
+- ![image](../../../image/a13.png)
 
 ```
 hostname : 확인한 엔드포인트
@@ -54,7 +54,7 @@ Password : 디비 만들 때 작성한 password
 
 ## 읽기 전용 데이터 베이스 생성 (4)
 
-- ![image](../../image/a17.png)
+- ![image](../../../image/a17.png)
 
 ```
 -- 설정 --
@@ -74,8 +74,8 @@ Password : 디비 만들 때 작성한 password
 
 ## 데이터 특정 상태 스냅샷 저장하기
 
-- ![image](../../image/a18.png)
-- ![image](../../image/a19.png)
+- ![image](../../../image/a18.png)
+- ![image](../../../image/a19.png)
 
 ```
 스냅샷 보존을 이용해서 db를 이전 상태로 보존 할 수 있다.

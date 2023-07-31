@@ -9,7 +9,7 @@ grand_parent: Infra
 
 ## 폴더 구조
 
-- ![image](../../image/d57.png)
+- ![image](../../../image/d57.png)
 
 ```js
 - .travis.yml

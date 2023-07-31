@@ -133,8 +133,8 @@ export const handler = async (event, context) => {
 
 - API Gateway -> 생선된 게이트 웨이 선택 -> Routes -> create
   - ✅ GET 선택 후 input창에 `/items/{id}` 입력 후 생성
-  - ![image](../../image/aws1.png)
-  - ![image](../../image/aws2.png)
+  - ![image](../../../image/aws1.png)
+  - ![image](../../../image/aws2.png)
   - 총 4개 생성
     - GET : /items
     - GET : /items/{id}
@@ -157,22 +157,22 @@ export const handler = async (event, context) => {
     - Lambda 함수 : ✅ arn:aws:lambda:us-east-2:773778816275:function:http-crud-tutorial-function
     - 호출 권한 : ✅
     - Create 클릭
-    - ![image](../../image/aws3.png)
+    - ![image](../../../image/aws3.png)
 
 <br />
 
 - API -> Gateway -> Develop -> Integrations
   - 통합을 경로에 연결
   - 생성한 4개의 api에 람다를 통합 연결하기
-    - ![image](../../image/aws4.png)
+    - ![image](../../../image/aws4.png)
     - put , get , delete , get 모두 통합 연결 클릭
-      - ![image](../../image/aws5.png)
+      - ![image](../../../image/aws5.png)
 
 > 끝끝 <br /> [ 모든 api 람다에 연결 완료 ] <br /> Deploy는 연결할 필요 없다.
 
 > api 만들기는 끝
 
-- ![image](../../image/aws6.png)
+- ![image](../../../image/aws6.png)
   - url 호출 뒤에 / 엔드포인터 넣어서 api 호출한다.
 
 <br />
@@ -202,7 +202,7 @@ https://mmm5isyv34.execute-api.us-east-2.amazonaws.com/items/1
 ## CORS 구성 [선택] (6)
 
 - API Gateway -> Develop -> CORS -> 구성
-  - ![image](../../image/aws6.png)
+  - ![image](../../../image/aws6.png)
   - Access-Control-Allow-Methods : GET / POST/ PUT /DELETE / \*
   - Access-Control-Allow-Headers : authorization, \*
   - Access-Control-Max-Age : 300

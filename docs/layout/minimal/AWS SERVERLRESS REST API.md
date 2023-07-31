@@ -156,12 +156,12 @@ export const handler = async (event, context) => {
 > api 라우터 생성
 
 - Amazone API Gateway
-  - ![image](../../image/aws6.png)
+  - ![image](../../../image/aws6.png)
   - 리소스 -> 작업 -> 리소스 생성 : items
-  - ![image](../../image/aws9.png)
-  - ![image](../../image/aws10.png)
+  - ![image](../../../image/aws9.png)
+  - ![image](../../../image/aws10.png)
     - 리소스 생성 / 메소드 생성 해가면서 api를 만듦
-  - ![image](../../image/aws11.png)
+  - ![image](../../../image/aws11.png)
     - 각 api 마다
       - 통합 유형 : Lamda함수
       - Lambda 프록시 통합 사용 : ✅
@@ -176,7 +176,7 @@ export const handler = async (event, context) => {
 
 - query string 마다 작업 -> CORS 활성화 -> 전부 Default 값으로 해더 대체 버튼 클릭
 
-  - ![image](../../image/aws12.png)
+  - ![image](../../../image/aws12.png)
   - 기본값으로 선택 후 CORS 활성화 및 기존의 CORS 해더 대체
   - 예, 기본값으로 대체 하겠습니다.
 

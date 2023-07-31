@@ -60,7 +60,7 @@ CONTAINER ID   IMAGE     COMMAND            CREATED         STATUS         PORTS
 
 ## 도커의 생명 주기 [생성 -> 시작 -> 실행]
 
-- ![image](../../image/d1.png)
+- ![image](../../../image/d1.png)
 
 ```bash
 # hello-world 파일 스냅샷을 컨테이너 하드디스크에 넣어줌 + 컨테이너 생성
@@ -78,7 +78,7 @@ docker start hello-world
 
 ## 도커의 생명 주기 [Stop -> Kill]
 
-- ![image](../../image/d2.png)
+- ![image](../../../image/d2.png)
 
 ```bash
 # 도커 중단하기
@@ -98,7 +98,7 @@ docker start hello-world
 
 ## 도커의 생명 주기 [Stop -> deleted]
 
-- ![image](../../image/d3.png)
+- ![image](../../../image/d3.png)
 
 ```bash
 # 도커 이미지 삭제
@@ -116,7 +116,7 @@ docker rmi <이미지id>
 
 ## 실행중인 컨테이너에 명령을 전달
 
-![image](../../image/d4.png)
+![image](../../../image/d4.png)
 
 ```bash
 # 실행중인 컨테이너에게 명령어를 전달

@@ -11,8 +11,8 @@ grand_parent: Infra
 # EC2 기본 설정 (1)
 
 - Amazon Linux 2 AMI (HVM), 64-bit (x84)
-- ![image](../../image/d100.png)
-- ![image](../../image/d96.png)
+- ![image](../../../image/d100.png)
+- ![image](../../../image/d96.png)
   - node 환경 변수 설정
 
 > node , htop 등 설치
@@ -52,7 +52,7 @@ node -v
 
 # node 와 nginx 연결 (2)
 
-- ![image](../../image/d97.png)
+- ![image](../../../image/d97.png)
 
 > nginx 설치
 
@@ -124,7 +124,7 @@ curl localhost
 
 # pm2 설치 및 프로젝트 빌드 (3)
 
-- ![image](../../image/d98.png)
+- ![image](../../../image/d98.png)
 
 > pm2 설치 및 프로젝트 빌드
 
@@ -152,7 +152,7 @@ pm2 list
 
 # 도메인 등록 및 https 인증서 설정 (4)
 
-- ![image](../../image/d99.png)
+- ![image](../../../image/d99.png)
 - Route 53에서 도메인 구매 후 - Record type : A -> VALUE에 주소 기입
 
 <br />
@@ -186,7 +186,7 @@ server {
 
 ## LetsEncrypt 인증서 설정
 
-- ![image](../../image/d101.png)
+- ![image](../../../image/d101.png)
 
 ```bash
 ## 인증서 발급을 위한 라이브러리 설치
@@ -226,7 +226,7 @@ systemctl restart nginx
 
 ## 인증서 자동 연장
 
-- ![image](../../image/d102.png)
+- ![image](../../../image/d102.png)
 
 ```bash
 nginx -t
@@ -239,7 +239,7 @@ systemctl restart nginx
 
 # CI/CD 자동 배포 적용
 
-- ![image](../../image/d103.png)
+- ![image](../../../image/d103.png)
 
 > github root 저장소에 .github/workflows/deploy-main.yml 파일 생성
 

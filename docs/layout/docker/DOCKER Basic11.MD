@@ -43,7 +43,7 @@ docker exec -it [이미지] sh
 
 ## docker 작업 목록
 
-- ![image](../../image/d78.png)
+- ![image](../../../image/d78.png)
 
 ```bash
 # 현재 작업이 작업 중인 내부의 근무자가 일하고 있는 컨테이너만 표시
@@ -65,7 +65,7 @@ docker system prune -a
 
 > 현재 로컬 이미지들 확인
 
-- ![image](../../image/d77.png)
+- ![image](../../../image/d77.png)
 
 <br />
 <br />
@@ -265,15 +265,15 @@ docker-compose up
 
 # 도커 3대 요소
 
-- ![image](../../image/d79.png)
-- ![image](../../image/d80.png)
-- ![image](../../image/d81.png)
+- ![image](../../../image/d79.png)
+- ![image](../../../image/d80.png)
+- ![image](../../../image/d81.png)
 
 <br />
 
 # 도커 이미지 배포 과정
 
-- ![image](../../image/d82.png)
+- ![image](../../../image/d82.png)
 
 <br />
 

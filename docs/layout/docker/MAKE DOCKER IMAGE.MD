@@ -8,7 +8,7 @@ grand_parent: Infra
 
 # Docker 이미지 만들기
 
-- ![image](../../image/d5.png)
+- ![image](../../../image/d5.png)
 
 <br />
 

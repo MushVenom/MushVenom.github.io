@@ -104,20 +104,20 @@ CMD ["node","server.js"]
 
 - `재빌드 시 효율적으로 하는 법`
 
-  - ![image](../../image/d15.png)
+  - ![image](../../../image/d15.png)
 
 - `빌드 완료`
-  - ![image](../../image/d10.png)
+  - ![image](../../../image/d10.png)
 - `생성한 컨테이너 폴더 구조`
   - `WORKDIR`
-  - ![image](../../image/d14.png)
+  - ![image](../../../image/d14.png)
 
 <br />
 
 ## 포트를 매핑해서 도커 컨테이너안 포트와 연결 (3)
 
-- ![image](../../image/d11.png)
-- ![image](../../image/d12.png)
+- ![image](../../../image/d11.png)
+- ![image](../../../image/d12.png)
 
 ```bash
 # 컨테이너 8080포트와 연결
@@ -130,8 +130,8 @@ docker run -p 49160:8080 [이미지 이름]
 
 ## Docker Volumn를 이용해서 Docker코드 변경 후 바로 적용하기 (4)
 
-- ![image](../../image/d16.png)
-- ![image](../../image/d17.png)
+- ![image](../../../image/d16.png)
+- ![image](../../../image/d17.png)
 
 <br />
 
@@ -151,5 +151,5 @@ docker run -d -p 5000:8080 -v /usr/src/app/node_modules -v $(pwd):/usr/src/app <
 ```
 
 - `위처럼 Volume을 이용해서 키면 빌드할 때 소스를 바꾸더라도 바꾼 코드가 바로 적용된다.`
-- ![image](../../image/d18.png)
+- ![image](../../../image/d18.png)
   - `로컬의 코드를 참고 / node_modules은 도커내 폴더를 참고하기 때문에 코드 변경이 있어도 바로 확인이 가능하다.`

@@ -39,12 +39,12 @@ grand_parent: Infra
   - 통합 대상 : ✅ Lambda 함수
   - 통합 세부 정보 : ✅ AWS 리전 / ✅ [Lambda 함수 생성 (2)]에서 만든 Lamdba함수 선택
   - 호출 권한 : ✅ 체크
-  - ![image](../../image/aws33.png)
+  - ![image](../../../image/aws33.png)
 
 <br />
 
 - API gateway -> Develop -> Routes -> Create -> 통합 [(2)에서 만든 Lamdba 연결]
-  - ![image](../../image/aws33.png)
+  - ![image](../../../image/aws33.png)
 
 > Lambda 함수 /api gateway 연결 (배포는 안해도 자동으로 됨)
 
@@ -85,8 +85,8 @@ OAuth 2.0 권한 부여 유형
  Conginito -> 사용자 풀 -> 앱 통합 -> 앱 클라이언트 목록 -> 호스팅 UI (호스팅 ui 보기)
 ```
 
-- ![image](../../image/aws35.png)
-- ![image](../../image/aws36.png)
+- ![image](../../../image/aws35.png)
+- ![image](../../../image/aws36.png)
 
 <br />
 
@@ -94,7 +94,7 @@ OAuth 2.0 권한 부여 유형
 
 - api gateway 대시보드 -> [API gateway 생성 (1)]에서 만든 gateway선택 -> Authorization 선택
   - 권한 부여자 생성 및 연결
-  - ![image](../../image/aws37.png)
+  - ![image](../../../image/aws37.png)
 
 ```
 - "권한 부여자 유형"
@@ -112,16 +112,16 @@ OAuth 2.0 권한 부여 유형
 ```
 
 - cognito 설정값 (1)
-  - ![image](../../image/aws38.png)
+  - ![image](../../../image/aws38.png)
   - ARN / userpool
 
 <br />
 
 - cognito 설정값 (2)
   - cognito -> 사용자 풀 -> 앱 통합 -> 앱 클라이언트 목록 -> client id 확인
-  - ![image](../../image/aws39.png)
+  - ![image](../../../image/aws39.png)
 
 <br />
 
-- ![image](../../image/aws40.png)
+- ![image](../../../image/aws40.png)
 - `완료`
