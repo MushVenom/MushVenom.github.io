@@ -1,5 +1,5 @@
 ---
-title: A minimal layout page
+title: AWS
 layout: minimal
 parent: Layout
 has_children: true
