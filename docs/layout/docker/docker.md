@@ -1,7 +1,7 @@
 ---
 title: docker
 layout: minimal
-parent: AWS
+parent: Infra
 has_children: true
 ---
 
