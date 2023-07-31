@@ -1,8 +1,8 @@
 ---
 title: Minimal layout child page
 layout: default
-parent: docker
-grand_parent: AWS
+parent: AA
+grand_parent: Test
 ---
 
-## 도커
+## 테스트
