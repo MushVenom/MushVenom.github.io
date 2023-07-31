@@ -23,7 +23,7 @@ grand_parent: Infra
 
 ## 인스턴스 연결 후 기본적인 세팅
 
-- ![image](../../image/d63.png)
+- ![image](../../../image/d63.png)
 
 ```bash
 # 기본적인 우분투 업데이트
@@ -42,7 +42,7 @@ node -e "console.log('Running Node.js ' + process.version)"
 
 ## 소스 다운 후 build
 
-- ![image](../../image/d64.png)
+- ![image](../../../image/d64.png)
 
 ```bash
 git clone ""
@@ -59,7 +59,7 @@ sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-po
 
 ## pm2
 
-- ![image](../../image/d65.png)
+- ![image](../../../image/d65.png)
 
 ```bash
 # ›
@@ -72,7 +72,7 @@ pm2 start npm --name "next" -w -i max -- start
 
 # Route 53 연결
 
-- ![image](../../image/d67.png)
+- ![image](../../../image/d67.png)
 - 레코드 생성
   - value값에 ip만 넣어주면 끝
   - value : 12.31.142.12
