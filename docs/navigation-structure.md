@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Navigation Structure
+title: 준비중 1
 nav_order: 5
 ---
 

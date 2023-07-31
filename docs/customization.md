@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Customization
+title: 준바중 2
 nav_order: 6
 ---
 

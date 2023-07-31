@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Search
+title: 준비 중 3
 nav_order: 7
 ---
 

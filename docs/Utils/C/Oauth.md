@@ -1,8 +1,8 @@
 ---
 title: Oauth 개념
-layout: minimal
-parent: Utils
-has_children: true
+layout: default
+parent: Oauth
+grand_parent: Utils
 ---
 
 # OAUTH 2.0
