@@ -1,5 +1,5 @@
 ---
-title: 01_1 useEffect
+title: 01_1 useEffect,useReducer
 layout: default
 parent: SPA
 grand_parent: Front
