@@ -1,3 +1,11 @@
+---
+title: 01_2 useRef,useDeferredValue
+layout: default
+parent: SPA
+grand_parent: Front
+---
+
+
 # React REF 관련
 
 
