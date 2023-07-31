@@ -19,7 +19,7 @@ grand_parent: Infra
 - 서버 재부팅 시에도 데이터를 유지할 수 있다.
 ```
 
-- ![image](../../image/d19.png)
+- ![image](../../../image/d19.png)
   - `서로 다른 컨테이너에서 아무런 설정없이 접근/통신을 할 수 없다.`
   - 멀티 컨테이너 상황에서 사용하는 것 : `Docker Compose`
 
@@ -79,8 +79,8 @@ CMD ["node","server.js"]
 
 ## docker Compose 파일 작성하기(2)
 
-- ![image](../../image/d21.png)
-- ![image](../../image/d20.png)
+- ![image](../../../image/d21.png)
+- ![image](../../../image/d20.png)
 
 - 컨테이너 사이에 네트워크를 연결 시켜주는 것 : `Docker Compose`
 
@@ -112,8 +112,8 @@ services:
 
 ## docker Compose로 파일 실행/종료하기(3)
 
-- ![image](../../image/d22.png)
-- ![image](../../image/d24.png)
+- ![image](../../../image/d22.png)
+- ![image](../../../image/d24.png)
   - 컨테이너 백그라운드 실행 명령어
     > docker compose 실행 명령어
 
