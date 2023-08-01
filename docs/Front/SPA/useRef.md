@@ -9,20 +9,22 @@ grand_parent: Front
 # React REF 관련
 
 
-{: .highlight }
- HTML요소에 직접 접근해서 DOM API이용후 제어할 때 사용하는 props</br>
- Ref의 값은 컨포넌트의 생명주기를 통해 값이 유지 됨 </br>
+{: .note }
+HTML요소에 직접 접근해서 DOM API이용후 제어할 때 사용하는 props</br>
+Ref의 값은 컨포넌트의 생명주기를 통해 값이 유지 됨 </br>
 변화는 감지 해야하지만 변화가 랜더링을 발생시키면 안되는 값을 다룰때 사용하는 것
 
 </br>
 </br>
 
+{: .note }
 1.Ref의 변화 -> No 렌더링 -> 변수들의 값이 유지됨</br>
 2.State의 변화 -> 렌더링 -> Ref의 값은 그대로 유지됨
 
->inputRef 객체의 current 속성을 통해 
+> inputRef 객체의 current 속성을 통해 
 
-```
+
+```js
 import React, { useRef } from "react";
 
 const countRef = useRef("초기값");
@@ -37,8 +39,9 @@ const upRef = () =>{
 ```
 
 
->React - Dom 새창을 열면 input에 focus
-```
+> React - Dom 새창을 열면 input에 focus
+
+```js
     const inputRef = useRef<HTMLInputElement>(null);
 
      useEffect(()=>{
