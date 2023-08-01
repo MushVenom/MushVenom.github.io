@@ -113,3 +113,9 @@ The theme is available as open source under the terms of the [MIT License](http:
 ```bash
 jekyll serve
 ```
+
+
+```bash
+$ bundle install --path vendor/bundle
+$ bundle exec jekyll serve
+```
