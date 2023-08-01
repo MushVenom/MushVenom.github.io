@@ -14,8 +14,12 @@ HTML요소에 직접 접근해서 DOM API이용후 제어할 때 사용하는 pr
 Ref의 값은 컨포넌트의 생명주기를 통해 값이 유지 됨 </br>
 변화는 감지 해야하지만 변화가 랜더링을 발생시키면 안되는 값을 다룰때 사용하는 것
 
-</br>
-</br>
+
+
+<br />
+<br />
+
+
 
 {: .note }
 1.Ref의 변화 -> No 렌더링 -> 변수들의 값이 유지됨</br>
@@ -65,15 +69,17 @@ javascript에서 특정 Dom을 선택하는 역할 ex) getElementById <br />
 <br />
 <br />
 
+---
+
 # React useDeferredValue
 
 {: .note-title }
 > My note title
 >
-> 낮은 우선 순위를 지정하기 위한 훅
-> useTransition = 함수 실행의 우선 순위를 지정 , useDeferredValue = 값의 업데이트 우선순위 지정
-> 리액트가 성능에 따라 성능적으로 여유가 있을 때 업데이트를 시켜주는 훅
-> 변수값 업데이트가 느리게 진행되어도 되는 것은 useDeferredValue훅을 이용한다.
+> 낮은 우선 순위를 지정하기 위한 훅 <br />
+> useTransition = 함수 실행의 우선 순위를 지정 , useDeferredValue = 값의 업데이트 우선순위 지정<br />
+> 리액트가 성능에 따라 성능적으로 여유가 있을 때 업데이트를 시켜주는 훅 <br />
+> 변수값 업데이트가 느리게 진행되어도 되는 것은 useDeferredValue훅을 이용한다. <br />
 > useMemo와 사용 시 불 필요한 재 랜더링을 막으면서 하위 컴포넌트나 상태의 업데이트를 지연시킬 수 있다. 
 
 <br />
