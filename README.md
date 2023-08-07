@@ -116,6 +116,7 @@ jekyll serve
 
 
 ```bash
+🎯💡🔥📌✅
 $ bundle install --path vendor/bundle
 $ bundle exec jekyll serve
 ```
