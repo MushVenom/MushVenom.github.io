@@ -247,3 +247,16 @@ https://velog.io/@seungchan__y/Webstorm에서-ESLint-Prettier-적용하기
 
 
 > code Cleanup 후 완료
+
+
+
+<br />
+<br />
+
+## WebStorm 내장 저장 시 재정렬 기능 비활성화 (선택적)
+
+
+{: .highlight }
+> - WebStorm에는 내장된 코드 재정렬 기능이 있습니다. Prettier와 충돌을 피하기 위해 이 기능을 비활성화하는 것이 좋습니다.
+> - Preferences (또는 Settings)에서 Editor > General > Auto Import으로 이동합니다.
+"Optimize imports on the fly" 옵션의 체크를 해제합니다.
