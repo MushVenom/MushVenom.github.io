@@ -201,7 +201,6 @@ return (
     {/*유효성 검증 에러 텍스트 표현 하기*/}
     {formik.touched === true && formik.errors?.firstName}
   </form>
-)
-
+  )
 }
 ```

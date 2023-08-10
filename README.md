@@ -119,5 +119,5 @@ jekyll serve
 🎯💡🔥📌✅
 $ bundle install --path vendor/bundle
 $ bundle exec jekyll serve
-JJehyun.github.io
+$ JJehyun.github.io
 ```
