@@ -176,3 +176,71 @@ jobs:
           변수: ${{secrets.PASSWORD}}
           run echo <y password is $변수
 ```
+
+
+<br />
+<br />
+<br />
+
+---
+
+# git action 예제(5)
+
+
+![Alt text](image-51.png)
+
+{: .note } 
+> - 테스트 진행하는 예제
+>   - 테스트를 진행했을때 에러가 있으면 자동으로pr를 닫아주는 예제
+
+<br />
+
+```yml
+# 테스트 진행하는 예제
+
+name: Node.js CI
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+      ## 12 , 14 , 16 버전에서 테스트 실행
+        node-version: [12.x, 14.x, 16.x]
+
+    steps:
+    # 사용하는 패키지
+    - uses: actions/checkout@v2
+    # 사용자가 직접 붙인 이름 (1)
+    - name: Execute text
+      run: npm test
+    # 사용자가 직접 붙인 이름 (2)
+    # 아래코드는  pr를 보냈을때 test가 실패하면 pr을 자동으로 close해주는 예제이다.
+    - name: if fail
+      uses: actions/github-script@0.2.0a
+      with:
+        github-token: ${{github.token}}
+        script: |
+          const ref = "${{github.ref}}"
+          const pull_number = Number(ref.split("/")[2])
+          await github.pulls.createReview({
+            ...context.repo,
+            pull_number,
+            body:"테스트가 실패했습니다.",
+            event: "REQUEST_CHANGES"
+          })
+          await github.pulls.update({
+            ...context.repo,
+            pull_number,
+            state: "closed"
+          })
+      if: failure()                 
+    
+
+```
