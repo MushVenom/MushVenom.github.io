@@ -361,3 +361,274 @@ git push origin --delete jjehyun
 <br />
 
 --- 
+
+## git reset의 3가지 방법
+
+![Alt text](image-15.png)
+
+{: .highlight } 
+> - `git reset --hard` : working directory까지 날림
+>   - `내가 고친 파일 내역 까지 모두 날림`
+> - `git reset --mixed` : working directory에는 남겨둠
+>   - `내가 고친 파일 내역을 살리고 add 하기전으로 돌림`
+> - `git reset --soft` : Staging area에 남겨둠
+>   - `내가 고친 파일 내역 살리고 add한 이루로 돌림`
+
+
+<br />
+<br />
+<br />
+
+--- 
+
+## Git의 Head
+
+![Alt text](image-17.png)
+
+{: .highlight } 
+> - `git HEAD는 현재 속한 브랜치의 가장 최신의 커밋`
+>   - `git checkout`: 시간선은 그대로 둔 채 이전 커밋으로 돌아가기
+
+<br />
+
+```bash
+# 한단계 전 커밋으로 돌아가기
+git checkout Head^
+# 두단계 전 커밋으로 돌아가기
+git checkout Head^^
+# 세단계 전 커밋으로 돌아가기
+git checkout Head^^^
+# 앞 커밋으로 이동 
+git checkout - 
+# 위 명령어로 파일의 변화를 관찰한 후 원래 브랜치로 돌아가기
+git switch 원래브랜치
+# 두단계 커밋으로 돌아간 뒤 리셋 적용
+git reset --hard HEAD^^
+```
+
+<br />
+<br />
+<br />
+
+--- 
+
+## pull 과 fetch의 차이점
+
+
+{: .highlight } 
+> - `fetch` : 원격 저장소와 로컬 저장소 동기화 하기
+>   - 원격 저장소의 최신 커밋을 로컬로 가져오기만 함
+> - `pull` : 원격 저장소의 최신 커밋을 가져와 `merge` or `rebase` 진행
+
+<br />
+
+```bash
+# git과 동기화
+git fetch
+# 원격의 main의 내용을 훌터보기만 함
+git checkout origin/main
+# 다시 로걸의 main으로 이동
+git switch main
+
+
+# 로컬과 원격의 내용 merge
+git pull
+```
+
+<br />
+<br />
+<br />
+
+--- 
+
+## 원격 저장소에 있는 브랜치 가져오기
+
+{: .highlight } 
+> 원격 저장소에 있는 브랜치 가져오기
+
+```bash
+# 동기화
+git fetch
+# 브랜치 살펴보기
+git branch -a
+# 로컬에도 원격 브랜치 가져오기
+git switch -t origin/브랜치명
+```
+
+<br />
+<br />
+<br />
+
+--- 
+
+## 커밋 컨벤션
+
+- ![Alt text](image-18.png)
+- ![Alt text](image-19.png)
+
+{: .highlight } 
+> - 한 기능에 한가지 커밋만 넣기
+
+<br />
+<br />
+<br />
+
+--- 
+
+## 커밋 수정하기
+
+![Alt text](image-24.png)
+
+{: .highlight }
+> - 전에 올린 커밋 메세지 수정하기
+>   - `git commit --amend`
+> - 지난 커밋에 하나의 수정 사항 추가하기
+>   - `git add .` 파일 추가하기
+>   - `git commit --amend` (파일 하나 추가하고 어전 커밋메세지를 변경하면서 변경사항 하나 더 추가)
+
+<br />
+
+```bash
+## 커밋 메세지 수정하기
+git commit --amend
+
+## 이전 커밋에 하나의 변경사항 추가하기
+git add .
+git commit --amend -m "하나의 커밋 추가요!"
+```
+
+<br />
+<br />
+<br />
+
+--- 
+
+## 과거의 다양한 커밋을 삭제, 통합, 변경 방법
+
+![Alt text](image-25.png)
+
+{: .highlight }
+> - 과거 커밋 내역을 다양한 방법으로 수정 가능
+
+<br />
+<br />
+<br />
+
+--- 
+
+## git에서 관리하지 않는 파일 삭제
+
+![Alt text](image-26.png)
+
+{: .highlight }
+> - git에서 추적하지 않는 파일들 삭제
+
+<br />
+
+```bash
+# 폴더를 포함해서 깃에서 추적하지 않는 파일 삭제 목록 
+git clean -nd
+
+# 하나씩 물어보면서 삭제하기
+git clean -ni
+
+# 깃 추척하지 않는 모든 파일 삭제 하기
+git clean -df
+```
+
+
+<br />
+<br />
+<br />
+
+--- 
+
+## git에서 커밋되지 않는 변경사항 되돌리기
+
+
+{: .highlight }
+> - 파일 변경 사항 모두 없애기 `restore`
+
+<br />
+
+```bash
+# 수정 사항 없애기
+git restore "파일 명"
+# 모든 수정 사항 없애기
+git restore .
+```
+
+
+<br />
+<br />
+<br />
+
+--- 
+
+## git add 한 후 add 전으로 돌아가기
+
+![Alt text](image-27.png)
+
+{: .highlight }
+> - git add . 한 후 add 하기 전으로 돌아가는 방법
+>   - `git restore --staged`
+>   - git add한 후 working directory로 보내는 방법
+
+<br />
+
+```bash
+# add 되돌리기
+git restore --staged
+```
+
+<br />
+<br />
+
+--- 
+
+## git 특정 파일만 특정 커밋으로 돌아가는 방법
+
+![Alt text](image-28.png)
+
+{: .highlight }
+> - 특정 파일만 특정 커밋으로 돌아가기
+>   - `git add / git commit 되지 않고 파일만 변경됨`
+>   - git restore --soure="asdknasd02102" 파일 명
+
+<br />
+
+```bash
+# 특정 시점으로 변경
+git restore --source"23912bes113251f512" 파일명.yaml
+
+# 특정 시점에서 다시 원상 복구
+git restore .
+```
+
+
+<br />
+<br />
+
+--- 
+
+## git 리셋 복구 하기
+
+![Alt text](image-29.png)
+
+{: .highlight }
+> - `reflog`를 이용해서 `reset 복구 하기`
+>   - reset Head~15 한 바로 뒤의 시점을 리셋하면 리셋 전으로 돌아갈 수 있다.
+
+<br />
+
+```bash
+# 최근 15개 리셋하기
+git reset --hard HEAD~15
+
+# 모든 커밋 목록 보기 (리셋 명령어도 볼 수 있음)
+git reflog
+
+# 15개 리셋을 하기 전 시점으로 리셋 실행
+# 리셋 복구 완료
+git reset --hard a89c095
+```
