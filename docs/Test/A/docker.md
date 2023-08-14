@@ -1,7 +1,7 @@
 ---
 title: AA
 layout: minimal
-parent: Test
+parent: Java
 has_children: true
 ---
 
