@@ -1,11 +1,46 @@
 ---
-title: 자바의 객체지향 Class
+title: 001.자바의 객체지향 Class
 layout: default
 parent: Java
 grand_parent: Back
 ---
 
 # Java 객체 지향 
+
+
+<br />
+<br />
+
+
+```java
+// 배열 생성
+Integer[] integerAry = {1,2,3,4,5};
+```
+
+
+---
+
+## 접근제어자
+
+- 공개 범위 : `private < default < protected < public`
+
+| 접근제어자        |  공개 범위     | 
+|:-------------|:------------------|
+| private           | 같은 클래스만! | 
+| default | 같은 패키지만!  | 
+| protected      | 같은 패키지! , 다른 패키지여도 상속받으면 o | 
+| public | 같은 패키지O , 다른 패키지O  | 
+
+
+<br />
+
+## 제어자
+
+| 접근제어자        |  공개 범위     | 
+|:-------------|:------------------|
+| static           | 모든 인스턴스에서 공통으로 사용 , 인스턴스 생성안하고 사용가능 , `인스턴스를 생성안하고 사용가능` 이기때문에 인스턴스 필드, 메서드를 사용xxx, 클래스 선언 후 바로 사용 가능| 
+| final           | 이게 붙으면 절대 확장,변경 불가능 , 상속도 안됨| 
+| abstract,interface(자격증 같은거)         | 선언만 하고 / implement에서 구체적인걸 구현 함 | 
 
 
 ## Java의 객체 지향
@@ -38,6 +73,8 @@ grand_parent: Back
 >   - `생성자` : 인스턴스를 만들때 무슨 인자를 받을 지 정해주는 것 (인자가 없어도 컴파일 시 만들어짐)
 >   - `Command + n` : constroct를 만들어주는 단축키
 > - `this` : 생성될 인스턴스를 가르킴
+> - `object`는 모든 클래스의 조상이다
+>   - toString , equal 등등의 object의 메소드는 override해서 개조할 수 있다.
 
 <br />
 
