@@ -1,7 +1,7 @@
 ---
 title: 자바의 기초
 layout: default
-parent: Java
+parent: JAVA
 grand_parent: Back
 ---
 

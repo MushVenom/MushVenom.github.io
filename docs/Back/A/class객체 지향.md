@@ -1,7 +1,7 @@
 ---
 title: 001.자바의 객체지향 Class
 layout: default
-parent: Java
+parent: JAVA
 grand_parent: Back
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: AA
+title: JAVA
 layout: minimal
-parent: Java
+parent: Back
 has_children: true
 ---
 
