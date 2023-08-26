@@ -252,3 +252,29 @@ public class UserDTO {
     private String userPw;
 }
 ```
+
+<br />
+<br />
+
+---
+
+## html 반환하기
+
+```java
+    //html를 통채로 반환하기
+    //StringBuffer 이용
+    @RequestMapping("hi-html")
+    public String Hihtml(){
+        //문자열을 연속적으로 붙일때 보통 StringBuffer를 이용한다.
+        StringBuffer sb = new StringBuffer();
+        sb.append("<html>");
+        sb.append("<head>");
+        sb.append("<title>My first Html Page</title>");
+        sb.append("</head>");
+        sb.append("<body>");
+        sb.append("html return");
+        sb.append("</body>");
+        sb.append("</html>");
+        return sb.toString();
+    }
+```
