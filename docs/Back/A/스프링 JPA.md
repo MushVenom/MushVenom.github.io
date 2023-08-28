@@ -17,6 +17,7 @@ grand_parent: Back
 {: .new }
 > - JPA를 이용하면 직접 매핑이 가능
 > - @Entity적용된건 Bean에서 테이블로 연결되는 매핑
+> - `JPA와 테이블 연결하려면 @Entity를 추가해야한다.`
 
 <br />
 
@@ -32,6 +33,8 @@ grand_parent: Back
 @Entity
 public class Course {
     @Id
+    //기본 키의 값이 어떻게 자동 생성 될 것인지 확인
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     //데이터 베이스와 이름이 다르다면 (name="name") 같다면 굳이 작성할 필요없다.
     @Column(name="name")

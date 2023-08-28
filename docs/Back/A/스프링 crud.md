@@ -278,3 +278,52 @@ public class UserDTO {
         return sb.toString();
     }
 ```
+
+
+<br />
+<br />
+<br />
+<br />
+
+
+
+---
+
+## Json 타입으로 리턴하기
+
+![Alt text](image-63.png)
+
+
+{: .note } 
+> - class를 하나 생성해서 Json으로 리턴이 가능하다.
+
+<br />
+
+> HelloDTO.java
+
+```java
+@Getter@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class HelloDTO {
+    private String Message;
+}
+```
+
+<br />
+
+> Controller.java
+
+```java
+@RestController
+@RequestMapping("v1")
+public class ResController {
+
+    //Json으로 리턴하기
+    @GetMapping("hello-json")
+    public HelloDTO HelloJson(){
+        return new HelloDTO("HelloWorld");
+    }
+}
+```
