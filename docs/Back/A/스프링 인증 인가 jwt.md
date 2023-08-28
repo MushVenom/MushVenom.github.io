@@ -29,3 +29,23 @@ grand_parent: Back
 > - 스프링 시큐리티 설치하면 기본적으로 로그인 페이지를 제공해준다. (`/`로 접근하면 됨)
 >   - 아이디 : user 
 >   - 비밀번호 : 서버 구동시 알려줌 위 사진 참고
+
+```java
+@Configuration
+public class SpringSecurityConfiguration{
+
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throw Exception{
+        //모든 요청 승인
+        http.authorizeHttpRequests(
+            auth -> auth.anyRequest().authenticated());
+        //승인 되지 않는 요청은 formLogin실행
+        http.formLogin(withDefaults());
+
+        //csrf비활성화해서 프레임사용 비활성화
+        http.csrf().disable();
+        http.headers().frameOptions.disble();
+        return http.build
+    }
+}
+```

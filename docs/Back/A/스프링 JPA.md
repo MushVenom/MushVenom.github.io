@@ -171,8 +171,9 @@ public interface DataJpaRepository extends JpaRepository<Course, Long> {
 {: .new }
 > - MyCommandLineRunner.java 
 >   - `save` : insert 기능
->   - `findById` : select 기능
+>   - `findById(id).get()` : select 기능
 >   - `count()` : select * count 같은 기능
+>   - `deleteById` : 삭제 기능
 
 ```java
 @Transactional
